@@ -12,13 +12,19 @@ A Navigation Bar changes the current screen (view). Guests (un-authenticated vis
 
 User navigation example:
 
+![](media/01.png)
+
 Guest navigation example:
+
+![](media/02.png)
 
 ### Home Screen
 
 The initial screen displays the navigation, register, login and the initial image + footer.
 
 Note: This page is only visible for guest users. Logged-in users are redirected to the All Memes page.
+
+![](media/03.png)
 
 ### Login User
 
@@ -30,11 +36,15 @@ The included REST service comes with the following premade user accounts, which 
 
 The Login page contains a form for existing user authentication. By providing an email and password the app should login a user in the system if there are no empty fields.
 
+![](media/04.png)
+
 If the login was successful the user will be redirected to the All Memes page. If there is an error, or the validations don't pass, an appropriate error message will be displayed, using a pop-up notification.
 
 ### Register User
 
 By given username, email, password and gender (Male or Female) the app registeres a new user in the system. All fields are required -- if any of them is empty, a notification will be displayed.
+
+![](media/05.png)
 
 If the registration was successful the user will be redirected to the All Memes page. If there is an error, or the validations don't pass, an appropriate error message will be displayed, using a pop-up notification.
 
@@ -46,19 +56,29 @@ The logout action is available to logged-in users. If the logout was successful,
 
 The Create page is available to logged-in users. It contains a form for creating a new meme. All fields must be filled in order to create a new meme.
 
+![](media/06.png)
+
 ### All Memes
 
 This page displays a list of all the memes in the system. Clicking on the details button below the cards leads to the details page for the selected meme. This page is visible to guests and logged-in users.
 
+![](media/07.png)
+
 If there are no memes, the following view will be displayed:
+
+![](media/08.png)
 
 ### Meme Details
 
 All users are able to view the details about a meme. Clicking the Details link of a meme card will display the Details page of that meme. If the currently logged-in user is the creator of the meme, the Edit and Delete buttons will be displayed, otherwise they will not be available.
 
+![](media/09.png)
+
 ### Edit Meme Screen
 
 The Edit page is available to logged-in users and it allows authors to edit their own memes. Clicking the Edit link of a particular meme on the Details page will display the Edit page, with all fields filled with the data for the meme. It contains a form with input fields for all relevant properties. All fields must be filled in order to edit the meme.
+
+![](media/10.png)
 
 ### Delete Meme
 
@@ -68,11 +88,19 @@ The delete action is available to logged-in users, for memes they have created. 
 
 Each logged-in user will be able to view his own profile by clicking [My Profile]. Username, Email and My memes count will be shown for the current user. The Gender of the user determines which picture is displayed as their avatar.
 
+![](media/11.png)
+
 If there are no memes, the following view will be displayed:
+
+![](media/12.png)
 
 ### Notifications
 
 In case of an error caused by the user's actions, the application will display an error notification message, which disappears after 3 seconds. There is a styled section with id "notifications" in the HTML file. Errors may include validation errors or error messages returned by the REST service, such as incorrect user credentials, on the following pages: Register, Login, Create and Edit.
+
+![](media/13.png)
+
+![](media/14.png)
 
 Using the Local REST Service
 ----------------------------
