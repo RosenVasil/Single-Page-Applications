@@ -38,7 +38,7 @@ export async function detailsView(ctx) {
     ctx.render(detailsTemplate(album, isOwner, onDelete));
 
     async function onDelete(ev) {
-        const choice = confirm('Are you sure you want to delete this meme?');
+        const choice = confirm('Are you sure you want to delete this album?');
 
         if (choice) {
             await deleteAlbum(ctx.params.id);
